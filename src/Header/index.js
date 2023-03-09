@@ -21,11 +21,9 @@ function Header () {
         Guyane Matériels
       </Typography> */}
       <Typography variant="h6">
-      Le groupe Matériels et Services est spécialisé dans le négoce et la location de fournitures et équipements de chantier et industriels depuis 1986.
-Avec ses entités Matériels et Services et Bolt And Ladder, le groupe offre une large gamme de produits de qualité, de la vis à la mini pelle, en passant par les EPI et l’outillage électroportatif, avec un stock adapté aux besoins de ses clients.
-Les forces de l’entreprise reposent sur l’expertise de ses équipes, du conseil au Service Après-Vente, la proximité avec ses clients et un stock adapté pour répondre au plus vite à leurs exigences.
-Pour garantir cette proximité, le groupe vous accueille sur plusieurs sites de Rémire à Kourou et offre un service de livraison de Saint-Laurent-du-Maroni à Saint-Georges de l’Oyapock. Cliquer ici pour voir nos différents points de vente
-Son expertise est reconnue à travers son adhésion au groupement national SOCODA, n°1 de la distribution professionnelle indépendante au service des métiers du Bâtiment et de l’Industrie, avec notamment l’obtention du label SOCODA « Spécialiste EPI » mais aussi par des grandes marques qui lui font confiance : Hitachi, Dieci, Metabo, Facom, Kemppi, Etesia, Tubesca-Comabi, Diadora, Bolle safety…
+      Notre appartenance au réseau Socoda apporte à nos clients des offres compétitives et la garantie d'une qualité de service. Présent depuis plus de trente ans sur le marché guyanais, Matériels et Services commercialise les marques internationales telles que Hitachi Construction, Bell, Ammann, Putzmeister, pour la gamme lourde, Hikoki, Metabo, Facom, Benza, pour la gamme industrie, Wolf et Etesia pour les espaces verts. Bolt&Ladder est le spécialiste de la fixation et des moyens d’accès en hauteur.
+Prestations et Services et MS Loc Guyane nous permettent d'offrir à nos clients une prise en charge totale de leurs besoins, de l'achat à la maintenance.
+Notre service pièces détachées dispose de 12 000 références en stock permanent, répondant ainsi aux besoins les plus urgents de nos clients.
       </Typography>
       </>
     )

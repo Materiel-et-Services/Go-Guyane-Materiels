@@ -3,7 +3,7 @@ import {Typography,Box,Grid} from '@mui/material';
 import MSSAFETY from "../ressources/MSSAFETY.png"
 let tempgallery = [MSSAFETY,MSSAFETY,MSSAFETY,MSSAFETY,MSSAFETY,MSSAFETY]
 
-function LogoGallery () {
+function LogoGallery ({getShopInfo}) {
     return (
       <Grid container>
         {
@@ -12,7 +12,7 @@ function LogoGallery () {
               <Grid item  key={index} xs={4}>
         
       
-      <img src={imageItem} width="90%" >
+      <img src={imageItem} width="90%" onClick={getShopInfo} >
         
       </img>
       

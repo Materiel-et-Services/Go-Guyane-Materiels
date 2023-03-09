@@ -1,0 +1,78 @@
+{
+    "body": {
+        "d": {
+            "results": [
+                {
+                    "Id": 1,
+                    "Title": "MS SAFETY",
+                    "Adresse": "{\"EntityType\":\"LocalBusiness\",\"LocationSource\":\"Bing\",\"LocationUri\":\"https://www.bingapis.com/api/v6/localbusinesses/YN8063x9184525826155060587?setLang=en\",\"UniqueId\":\"https://www.bingapis.com/api/v6/localbusinesses/YN8063x9184525826155060587?setLang=en\",\"DisplayName\":\"Matériels et Services\",\"Address\":{\"Street\":\"5 Rue Raoul Tanon de Pélissier - ZI COLLERY I, 97300 Cayenne\",\"City\":\"Cayenne, French Guiana, Guyane\",\"State\":\"French Guiana\",\"CountryOrRegion\":\"GF\",\"PostalCode\":\"97300\"},\"Coordinates\":{\"Latitude\":4.905496120452881,\"Longitude\":-52.32537841796875}}",
+                    "CountryOrRegion": "GF",
+                    "State": "French Guiana",
+                    "City": "Cayenne, French Guiana, Guyane",
+                    "PostalCode": "97300",
+                    "Street": "5 Rue Raoul Tanon de Pélissier - ZI COLLERY I, 97300 Cayenne",
+                    "GeoLoc": {
+                        "__metadata": {
+                            "type": "SP.FieldGeolocationValue"
+                        },
+                        "Altitude": 0,
+                        "Latitude": 4.90549612045288,
+                        "Longitude": -52.3253784179688,
+                        "Measure": 0
+                    },
+                    "DispName": "Matériels et Services",
+                    "T_x00e9_l_x00e9_phone": "0594294305",
+                    "LOGO": "{\"fileName\":\"logo-MS&BLVF5-71.png\",\"serverRelativeUrl\":\"/sites/Marketing/SiteAssets/Lists/26b78faa-2765-4f13-9659-252638645a78/logo-MS%26BLVF5-71.png\",\"id\":\"ac68886d-eb25-4bc2-a975-f0e0ec68a931\",\"serverUrl\":\"https://sochrima.sharepoint.com\",\"thumbnailRenderer\":{\"spItemUrl\":\"https://sochrima.sharepoint.com:443/_api/v2.1/drives/b!7mXBWNZtcUq3olD0ymIK1XkcEAJiQa5Jneix8ORSx_puny5sF7KeSan3B_Pu3mXd/items/01MYWPTVTNRBUKYJPLYJF2S5PQ4DWGRKJR\",\"fileVersion\":2,\"sponsorToken\":\"L3NpdGVzL01hcmtldGluZy9MaXN0cy9Qb2ludHMgZGUgdmVudGUgZXQgU2VydmljZXMgR3JvdXBlfExPR098MQ\"},\"type\":\"thumbnail\",\"fieldName\":\"LOGO\",\"fieldId\":\"be4d53c4-bdaf-44dd-954c-c4f22c583ac2\"}",
+                    "Horaires": "7h00-16h30",
+                    "CODEDEPOT": "M-VTESAF",
+                    "ContactPrincipalId": 22,
+                    "Descriptif": "MS SAFETY est le spécialiste pour vous équiper des pieds à la tête, avec des Equipements de Protection Individuelle innovants et de qualité. C'est aussi une large gamme d'articles de signalisation et de secours. \nConseils - Service de livraison - Personnalisation.",
+                    "ID": 1,
+                    "Modified": "2023-03-09T11:33:23Z",
+                    "Created": "2023-02-14T12:26:23Z",
+                    "AuthorId": 12,
+                    "EditorId": 12,
+                    "OData__UIVersionString": "7.0",
+                    "Attachments": false,
+                    "GUID": "dd08c983-8913-45d0-8ade-dd75bf45fd74"
+                },
+                {
+                    
+                    "Id": 2,
+                    "Title": "BOLT AND LADDER KOUROU",
+                    "Adresse": "{\"EntityType\":\"LocalBusiness\",\"LocationSource\":\"Bing\",\"LocationUri\":\"https://www.bingapis.com/api/v6/localbusinesses/YN2000x7458359291080902106?setLang=en\",\"UniqueId\":\"https://www.bingapis.com/api/v6/localbusinesses/YN2000x7458359291080902106?setLang=en\",\"DisplayName\":\"BOLT AND LADDER\",\"Address\":{\"Street\":\"3 r Gramme\",\"City\":\"Kourou\",\"State\":\"97\",\"CountryOrRegion\":\"FR\",\"PostalCode\":\"97310\"},\"Coordinates\":{\"Latitude\":5.156557083129883,\"Longitude\":-52.66756820678711}}",
+                    "CountryOrRegion": "FR",
+                    "State": "97",
+                    "City": "Kourou",
+                    "PostalCode": "97310",
+                    "Street": "3 r Gramme",
+                    "GeoLoc": {
+                        "__metadata": {
+                            "type": "SP.FieldGeolocationValue"
+                        },
+                        "Altitude": 0,
+                        "Latitude": 5.15655708312988,
+                        "Longitude": -52.6675682067871,
+                        "Measure": 0
+                    },
+                    "DispName": "BOLT AND LADDER",
+                    "T_x00e9_l_x00e9_phone": "0694448343",
+                    "LOGO": "{\"fileName\":\"logos-32.png\",\"serverRelativeUrl\":\"/sites/Marketing/SiteAssets/Lists/26b78faa-2765-4f13-9659-252638645a78/logos-32.png\",\"id\":\"cb273bfe-9890-439a-a028-71f40f503e45\",\"serverUrl\":\"https://sochrima.sharepoint.com\",\"thumbnailRenderer\":{\"spItemUrl\":\"https://sochrima.sharepoint.com:443/_api/v2.1/drives/b!7mXBWNZtcUq3olD0ymIK1XkcEAJiQa5Jneix8ORSx_puny5sF7KeSan3B_Pu3mXd/items/01MYWPTVX6HMT4XEEYTJB2AKDR6QHVAPSF\",\"fileVersion\":2,\"sponsorToken\":\"L3NpdGVzL01hcmtldGluZy9MaXN0cy9Qb2ludHMgZGUgdmVudGUgZXQgU2VydmljZXMgR3JvdXBlfExPR098Mg\"},\"type\":\"thumbnail\",\"fieldName\":\"LOGO\",\"fieldId\":\"be4d53c4-bdaf-44dd-954c-c4f22c583ac2\"}",
+                    "Horaires": "7h00-15h30",
+                    "CODEDEPOT": "B-VTEKOU",
+                    "ContactPrincipalId": 47,
+                    "Descriptif": "BOLT&LADDER est le spécialiste de la fixation et des moyens d'accès en hauteur : visserie, boulonnerie, échelles, échafaudages,... Le magasin de proximité de Kourou propose également de l'outillage électroportatif, de l'outillage à main et du matériel de construction.",
+                    "ID": 2,
+                    "Modified": "2023-03-09T12:16:49Z",
+                    "Created": "2023-02-14T12:28:04Z",
+                    "AuthorId": 12,
+                    "EditorId": 12,
+                    "OData__UIVersionString": "7.0",
+                    "Attachments": false,
+                    "GUID": "ed1f9804-8b06-4012-81f1-f88cfc74f715"
+                }
+               
+            ]
+        }
+    }
+}

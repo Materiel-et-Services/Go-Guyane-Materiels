@@ -9,7 +9,9 @@ import {Typography,Box,Grid} from '@mui/material';
 function LogoGallery ({updateShopInfo,shops}) {
   
     return shops === null ? <div></div> : 
-      <Grid container>
+      <><p>Choisir un magasin pour voir les informations qui le concerne</p>
+      <Grid sx={{mb: 3}} container spacing={1} justifyContent="center"
+      alignItems="center">
         {
           shops.map((imageItem,index) => {
             return (
@@ -26,7 +28,7 @@ function LogoGallery ({updateShopInfo,shops}) {
         }
         
       </Grid>
-      
+      </>
     
 }
 

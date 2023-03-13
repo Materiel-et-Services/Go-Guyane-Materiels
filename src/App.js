@@ -42,11 +42,11 @@ const updateActiveShopInfo = (e) => {
   return shops === null ? <p>En chargement</p> :
     <div className="App">
       <header className="App-header">
-        <Header></Header>
-        <LogoGallery  updateShopInfo={updateActiveShopInfo} shops={shops}></LogoGallery>
-        <ShopTabs shop={shop}></ShopTabs>
-        <Map shop={shop} shopsList={shops}></Map>
-      </header>
+        <Header id="pageHeader"></Header>
+     </header>
+     <LogoGallery  id="shopSelectorGallery" updateShopInfo={updateActiveShopInfo} shops={shops}></LogoGallery>
+        <ShopTabs id="shopInfoViz" shop={shop}></ShopTabs>
+        <Map id="shopMaps" shop={shop} shopsList={shops}></Map>
     </div>
   ;
 }

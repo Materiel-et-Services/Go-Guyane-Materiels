@@ -3,9 +3,9 @@ import './App.css';
 import Header from "./Header";
 import LogoGallery from "./LogoGallery";
 import ShopTabs from "./ShopTabs";
+import Map from "./Map";
 
-
-import React,{useState,useEffect,useRef} from 'react';
+import React,{useState,useEffect,useRef,useLayoutEffect} from 'react';
 const shopsToKeep = ["MS SUPPORT","MS SAFETY","MS TOOLS","MS HEAVY","BOLT AND LADDER KOUROU","MS INDUSTRY","PRESTATIONS ET SERVICES","MS LOCATION","MS SUPPORT","BOLT AND LADDER COLLERY","BOLT AND LADDER SUZINI"]
 // shops = shops.body.d.results
 // https://prod-20.brazilsouth.logic.azure.com:443/workflows/e233eb8317ff4a318d8e84ac1e3040a4/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=rT65bKZdt26Qt4QwfKfmSQoaspmO80YWtts30UD-DF8
@@ -17,7 +17,7 @@ function App() {
 const [shop,setShop] = useState(null)
 
 useEffect(() => {
-  console.log(shop)
+  
   if (shops === null) {
     fetch("https://prod-20.brazilsouth.logic.azure.com:443/workflows/e233eb8317ff4a318d8e84ac1e3040a4/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=rT65bKZdt26Qt4QwfKfmSQoaspmO80YWtts30UD-DF8",{method:"POST"})
   .then((response) => {
@@ -45,6 +45,7 @@ const updateActiveShopInfo = (e) => {
         <Header></Header>
         <LogoGallery  updateShopInfo={updateActiveShopInfo} shops={shops}></LogoGallery>
         <ShopTabs shop={shop}></ShopTabs>
+        <Map shop={shop} shopsList={shops}></Map>
       </header>
     </div>
   ;

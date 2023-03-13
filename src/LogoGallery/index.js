@@ -7,7 +7,7 @@ import {Typography,Box,Grid} from '@mui/material';
 // }
 
 function LogoGallery ({updateShopInfo,shops}) {
-  console.log(shops)
+  
     return shops === null ? <div></div> : 
       <Grid container>
         {

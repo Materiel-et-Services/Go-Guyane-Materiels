@@ -9,7 +9,7 @@ import {Typography,Box,Grid} from '@mui/material';
 function LogoGallery ({updateShopInfo,shops}) {
   
     return shops === null ? <div></div> : 
-      <><p>Choisir un magasin pour voir les informations qui le concerne</p>
+      <><Typography sx={{mt: 3}} fontSize={20}>Choisir un magasin pour voir les informations qui le concerne</Typography>
       <Grid sx={{mb: 3}} container spacing={1} justifyContent="center"
       alignItems="center">
         {

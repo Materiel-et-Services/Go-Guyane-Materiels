@@ -1,7 +1,8 @@
 import React,{useEffect,useState,useRef} from "react";
 import H from "@here/maps-api-for-javascript";
 
-import {Typography,Box,Grid,Button} from '@mui/material';
+import {Typography,Box,Grid,Button,Container} from '@mui/material';
+import { maxHeight, width } from "@mui/system";
 
 
 function Map ({shop,shopsList}) {
@@ -73,13 +74,13 @@ function Map ({shop,shopsList}) {
         // }
     },[testRef])
     
-    return (//shop === null ? <p>Carte en cours de chargement</p> : 
-    <>
-    <div className="map" style={{ width: '300px', height:'300px' }}  ref={testRef}>
-        
-     
-    </div>
-    </>
+    return (
+    <div style={{padding:"50px"}}>  
+    <div   style={{ width: '300px', height:'300px', margin:"auto" }}  ref={testRef}></div>
+    </div>  
+   
+      
+    
     )
 }
 

@@ -1,10 +1,11 @@
 import React from "react";
-import {Typography,Box,Container} from '@mui/material';
+import {Typography,Box,Container,Stack} from '@mui/material';
 import GMGROUPE from "../ressources/GUYANEMAT.png";
 
 function Header () {
     return (
-      <Container>
+      <Stack spacing={1} justifyContent="center"
+      alignItems="center">
       <Box
         component="img"
         className="App-logo"
@@ -26,7 +27,7 @@ function Header () {
 Prestations et Services et MS Loc Guyane nous permettent d'offrir à nos clients une prise en charge totale de leurs besoins, de l'achat à la maintenance.
 Notre service pièces détachées dispose de 12 000 références en stock permanent, répondant ainsi aux besoins les plus urgents de nos clients.
       </Typography>
-      </Container>
+      </Stack>
     )
 }
 

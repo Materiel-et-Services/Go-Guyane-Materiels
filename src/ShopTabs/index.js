@@ -13,7 +13,7 @@ function ShopTabs ({shop}) {
         <Typography sx={{mb: 3}}>{shop.Title}</Typography>
         <Typography sx={{mb: 4}}>{shop.Descriptif}</Typography>
 
-        <Typography sx={{mb: 3}}>Lundi au Vendredi {shop.Horaires}</Typography>
+        <Typography sx={{mb: 3}}>{shop.Horaires}</Typography>
         <article>
         <Typography>{shop.Street}</Typography>
         </article>

@@ -19,7 +19,7 @@ const [shop,setShop] = useState(null)
 useEffect(() => {
   
   if (shops === null) {
-    fetch("https://prod-20.brazilsouth.logic.azure.com:443/workflows/e233eb8317ff4a318d8e84ac1e3040a4/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=rT65bKZdt26Qt4QwfKfmSQoaspmO80YWtts30UD-DF8",{method:"POST"})
+    fetch(process.env.REACT_APP_HERE_URL,{method:"POST"})
   .then((response) => {
     
     return response.json()

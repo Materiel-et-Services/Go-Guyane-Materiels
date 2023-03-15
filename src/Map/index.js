@@ -21,7 +21,7 @@ function Map ({shop,shopsList}) {
         
         const H = window.H
            const platform = new H.service.Platform({
-            apikey: "swUKpTO9NI2tyqIx3vpAAX9gbQDtZ9l6KGZEEw4IupY"
+            apikey: process.env.REACT_APP_HERE_KEY
            })
            const layers = platform.createDefaultLayers();
 

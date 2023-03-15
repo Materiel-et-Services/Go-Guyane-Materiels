@@ -27,3 +27,20 @@
   color: #FFFF00;
 }
 
+.img-container {
+  position: relative;
+}
+
+.cityText {
+  position: absolute;
+  bottom: -2em;
+  right: 5px;
+  font-size: 12px;
+}
+.cityText p {
+  background: -webkit-linear-gradient(#FFAA00, #FFFF00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+

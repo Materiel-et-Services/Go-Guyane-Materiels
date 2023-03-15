@@ -14,13 +14,20 @@ function LogoGallery ({updateShopInfo,shops}) {
       alignItems="center">
         {
           shops.map((imageItem,index) => {
+            // let city = () => {
+            //   if (imageItem.Title === "BOLT AND LADDER KOUROU") {"Kourou"} else {
+                
+            //   }
+            // } 
             return (
               <Grid item  key={index} xs={4} onClick={updateShopInfo}>
         
-      
+      <div className="img-container">
       <img data-id={index} src={window.location.origin + '/img/' + imageItem.Title + ".png"} width="90%" >
         
       </img>
+      <div className="cityText"><p>{imageItem.Title.includes("BOLT AND LADDER ") ? imageItem.Title.replace("BOLT AND LADDER ","") : ""}</p></div>
+      </div>
       
         </Grid>
             )

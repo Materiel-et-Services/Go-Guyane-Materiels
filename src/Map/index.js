@@ -30,7 +30,7 @@ function Map ({shop,shopsList}) {
         //    console.log(HereMaps)
 
            var icon = new H.map.Icon(svgMarkup)
-           console.log(shopsList)
+           
            let geos = shopsList.map((shopElement) => {
                 return [{
                     lat: shopElement.GeoLoc.Latitude,

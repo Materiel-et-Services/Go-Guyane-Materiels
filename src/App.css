@@ -35,7 +35,7 @@
   position: absolute;
   bottom: -2em;
   right: 5px;
-  font-size: 12px;
+  font-size: 90%;
 }
 .cityText p {
   background: -webkit-linear-gradient(#FFAA00, #FFFF00);

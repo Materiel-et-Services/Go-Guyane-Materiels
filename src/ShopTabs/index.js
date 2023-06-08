@@ -24,7 +24,7 @@ function ShopTabs({ shop }) {
           </Button>
         </Grid>
         <Grid item xs={12} sm={8} md={6}>
-          <Button fullWidth variant="contained" href={"mailto:" + "bruno.sosin@matservgf.com"}>
+          <Button fullWidth variant="contained" href={"mailto:" + "commercial@matservgf.com"}>
             Envoyer un email à {shop.Title}
           </Button>
         </Grid>

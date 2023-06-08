@@ -33,11 +33,11 @@
 
 .cityText {
   position: absolute;
-  bottom: -2em;
+  bottom: -1em;
   right: 5px;
   font-size: 90%;
 }
-.cityText p {
+ .cityText h6 {
   background: -webkit-linear-gradient(#FFAA00, #FFFF00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

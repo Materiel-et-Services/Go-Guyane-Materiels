@@ -33,10 +33,13 @@ useEffect(() => {
   })
   }
 })
+
+const shopTabsRef = useRef(null)
   
-const updateActiveShopInfo = (e) => {
-  
-  return setShop(shops[e.target.dataset.id])
+const updateActiveShopInfo = (e,index) => {
+  e.stopPropagation();
+  setShop(shops[index])
+  shopTabsRef.current.scrollIntoView({ behavior: 'smooth' });
 }
 
   return shops === null ? <p>En chargement</p> :
@@ -45,7 +48,9 @@ const updateActiveShopInfo = (e) => {
         <Header id="pageHeader"></Header>
     {/* // </header> */}
      <LogoGallery  id="shopSelectorGallery" updateShopInfo={updateActiveShopInfo} shops={shops}></LogoGallery>
-        <ShopTabs id="shopInfoViz" shop={shop}></ShopTabs>
+        <div ref={shopTabsRef}>
+            <ShopTabs id="shopInfoViz" shop={shop}></ShopTabs>
+        </div>
         <Map id="shopMaps" shop={shop} shopsList={shops}></Map>
     </div>
   ;

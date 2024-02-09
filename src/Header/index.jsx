@@ -1,14 +1,16 @@
 import React, { useState } from "react";
-import { Typography, Box, Container, useMediaQuery, useTheme, Button } from '@mui/material';
-import { styled } from '@mui/system';
+import { Typography, Box, Container, useMediaQuery, useTheme, Button ,Card,CardContent} from '@mui/material';
+// import { styled } from '@mui/system';
+import { styled } from '@mui/material/styles';
+
 import GMGROUPE from "../ressources/GUYANEMAT.png";
 
 const LogoBox = styled(Box)(({ theme }) => ({
   height: "100%",
   width: "90%",
   display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
+  justifyContent: 'left',
+  alignItems: 'left',
   margin: theme.spacing(2, 0),
 }));
 
@@ -17,9 +19,28 @@ const LogoText = styled(Typography)(({ theme }) => ({
   color: "#003A96"  ,
   marginBottom: theme.spacing(2),
   [theme.breakpoints.down('md')]: {
-    fontSize: '1.2rem',
+    fontSize: '3rem',
   },
 }));
+
+const StyledCard = styled(Card)(({ theme }) => ({
+  backgroundColor: theme.palette.primary.main, // Utilise le thème principal par défaut de MUI
+  color: theme.palette.primary.contrastText,
+  borderRadius: theme.shape.borderRadius,
+  padding: theme.spacing(2),
+  boxShadow: theme.shadows[4],
+}));
+
+const Title = styled(Typography)(({ theme }) => ({
+  fontSize: '1.5rem', // Remplacez par la taille de votre choix
+  marginBottom: theme.spacing(2),
+}));
+
+const BodyText = styled(Typography)(({ theme }) => ({
+  fontSize: '1rem', // Remplacez par la taille de votre choix
+  marginBottom: theme.spacing(1), // Espace entre les paragraphes
+}));
+
 
 const Header = () => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -46,12 +67,50 @@ const Header = () => {
           }}
         />
       </LogoBox>
-      <LogoText variant="subtitle1">
+      {/* <LogoText variant="subtitle1">
         {isExpanded ? text : shortText}
+      </LogoText> */}
+      <LogoText variant="title1" component="h2">
+        Notre expertise à votre service
       </LogoText>
-      <Button onClick={() => setIsExpanded(!isExpanded)}>
+      <LogoText variant="title2" component="h2">
+         depuis plus de 40 ans
+      </LogoText>
+
+      <LogoText variant="title3" component="h3">
+         Plus de 30000 références en stock
+      </LogoText>
+      <LogoText variant="title3" component="h3">
+         7 points de ventes
+      </LogoText>
+      <LogoText variant="title3" component="h3">
+         4 sites
+      </LogoText>
+
+      <StyledCard>
+      <CardContent>
+        <Title gutterBottom variant="h5" component="div">
+          Un groupe proche de vous !
+        </Title>
+        <BodyText variant="body1">
+          Spécialisés dans le négoce de fournitures et équipements industriels, nous
+          avons à cœur de vous accompagner dans la croissance de vos métiers.
+        </BodyText>
+        <BodyText variant="body1">
+          Avec une offre produits complète, plusieurs points de vente et un service
+          après-vente intégré, votre suivi et votre satisfaction sont nos priorités.
+        </BodyText>
+        <BodyText variant="body1">
+          Nous cultivons confiance et fidélité envers nos fournisseurs et nos clients. Notre
+          expertise permet de répondre à vos besoins à tout moment.
+        </BodyText>
+      </CardContent>
+    </StyledCard>
+
+      
+      {/* <Button onClick={() => setIsExpanded(!isExpanded)}>
         {isExpanded ? "Voir moins" : "Voir plus"}
-      </Button>
+      </Button> */}
     </Container>
   );
 };

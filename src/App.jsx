@@ -19,7 +19,7 @@ const [shop,setShop] = useState(null)
 useEffect(() => {
   
   if (shops === null) {
-    fetch(process.env.REACT_APP_HERE_URL,{method:"POST"})
+    fetch(import.meta.env.VITE_HERE_URL,{method:"POST"})
   .then((response) => {
     
     return response.json()
@@ -32,7 +32,7 @@ useEffect(() => {
    fetchShops(shopsList)
   })
   }
-})
+},[shops])
 
 const shopTabsRef = useRef(null)
   

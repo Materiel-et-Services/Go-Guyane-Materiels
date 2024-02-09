@@ -157,7 +157,7 @@ function Map({shopsList}) {
 
   const initializeMap = (ref) => {
     const platform = new H.service.Platform({
-      apikey: process.env.REACT_APP_HERE_KEY
+      apikey: import.meta.env.VITE_HERE_KEY
     });
     const layers = platform.createDefaultLayers();
     

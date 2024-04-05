@@ -31,13 +31,13 @@ function Pic() {
       <Container>
       <Grid xs={12} sm={8} md={6} fullWidth>
 
-      <img src="./ressources images/travailphoto2.jpg" style={{ width: '100%', height: 'auto', borderRadius: '20px', zIndex: 1}} />
-      <img src="./ressources images/GROUPE.png" style={{ position: 'absolute', top: '3%', left: '6%', width: '20%', height: 'auto', zIndex: 2 }} />
+      <img src="./src/assets/travailphoto2.jpg" style={{ width: '100%', height: 'auto', borderRadius: '20px', zIndex: 1}} />
+      <img src="./src/assets/GROUPE.png" style={{ position: 'absolute', top: '3%', left: '6%', width: '20%', height: 'auto', zIndex: 2 }} />
       <a href='https://www.instagram.com/guyane_materiels/' target='_blank'>
-      <img src="./ressources images/logoinsta.png" style={{width:'5%',position: 'absolute', top: '2%', right: '11%', zIndex: 3}}/>
+      <img src="./src/assets/logoinsta.png" style={{width:'5%',position: 'absolute', top: '2%', right: '11%', zIndex: 3}}/>
       </a>
       <a href='https://www.facebook.com/people/Guyane-Mat%C3%A9riels-Groupe/100090642260998/' target='_blank'>
-      <img src="./ressources images/icons8-facebook-90.png" style={{width:'5%',position: 'absolute', top: '2%', right: '6%', zIndex: 3}}/>
+      <img src="./src/assets/icons8-facebook-90.png" style={{width:'5%',position: 'absolute', top: '2%', right: '6%', zIndex: 3}}/>
       </a>
       <div style={{ position: 'absolute', top: 0, left: 'auto', width: '96%', height: '99%', backgroundColor: 'rgb(0 27 255 / 22%)', borderRadius: '20px' }}></div>
       
@@ -136,7 +136,7 @@ console.log(item)
                   }}>
 
                     <div style={{height: '180px', display: 'flex', alignItems:'center', justifyContent:'center'}}>
-                    <img src={'/ressources images/' + item.Title + '.png'} style={{ width: '50%', maxWidth: '300px', display: 'inline-block'}} />
+                    <img src={'/src/assets/' + item.Title + '.png'} style={{ width: '50%', maxWidth: '300px', display: 'inline-block'}} />
                     </div>
                     
                     <h2 style={{ color: '#003A96' }}>{item.SubTitle}</h2>

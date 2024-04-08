@@ -28,7 +28,7 @@ function ShowCard({shop, showElement, shops}){
 
           <CardContent id='contentDesk'>
             <div>
-          <img src={'/src/assets/' + shop.Title + '.png'} style={{ width: '100%', maxWidth: '360px', display: 'block', margin: '2em auto' }} />
+          <img src={shop.Title + '.png'} style={{ width: '100%', maxWidth: '360px', display: 'block', margin: '2em auto' }} />
           <div className='bar' style={{margin: '2em auto'}}></div>
           
           

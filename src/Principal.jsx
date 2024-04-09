@@ -31,17 +31,20 @@ function Pic() {
       <Container>
       <Grid xs={12} sm={8} md={6} fullWidth>
 
-      <img src='/travailphoto2.jpg' style={{ width: '100%', height: 'auto', borderRadius: '20px', zIndex: 1}} />
-      <img src="/GROUPE.png" style={{ position: 'absolute', top: '3%', left: '6%', width: '20%', height: 'auto', zIndex: 2 }} />
-      <a href='https://www.instagram.com/guyane_materiels/' target='_blank'>
-      <img src="/logoinsta.png" style={{width:'5%',position: 'absolute', top: '2%', right: '11%', zIndex: 3}}/>
-      </a>
-      <a href='https://www.facebook.com/people/Guyane-Mat%C3%A9riels-Groupe/100090642260998/' target='_blank'>
-      <img src="/icons8-facebook-90.png" style={{width:'5%',position: 'absolute', top: '2%', right: '6%', zIndex: 3}}/>
-      </a>
-      <div style={{ position: 'absolute', top: 0, left: 'auto', width: '96%', height: '99%', backgroundColor: 'rgb(0 27 255 / 22%)', borderRadius: '20px' }}></div>
+      <div style={{ position: 'relative', width: '100%', height: 'auto', borderRadius: '20px', overflow: 'hidden' }}>
+  <img src='/soudeur.jpg' style={{ width: '100%', height: 'auto', borderRadius: '20px', zIndex: 1 }} />
+  <img src="/GROUPE.png" style={{ position: 'absolute', top: '3%', left: '2%', width: '20%', height: 'auto', zIndex: 3 }} />
+  <a href='https://www.instagram.com/guyane_materiels/' target='_blank'>
+    <img src="/logoinsta.png" style={{ width: '5%', position: 'absolute', top: '2%', right: '7%', zIndex: 3 }} />
+  </a>
+  <a href='https://www.facebook.com/people/Guyane-Mat%C3%A9riels-Groupe/100090642260998/' target='_blank'>
+    <img src="/icons8-facebook-90.png" style={{ width: '5%', position: 'absolute', top: '2%', right: '2%', zIndex: 3 }} />
+  </a>
+  <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', backgroundColor: 'rgb(0 27 255 / 22%)', borderRadius: '20px', zIndex: 2 }}></div>
+</div>
+
       
-      <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', textAlign: 'center', color: '#fff' }}>
+      <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', textAlign: 'center', color: '#fff', zIndex: 3 }}>
         <h1 style={{color: 'white', fontWeight:'800'}}>Notre expertise<br />à votre service<br /><div style={{backgroundColor: 'white', color: '#003A96', borderRadius: '20px', height: '1.3em', width: '10em', display: 'inline-block'}}>depuis + de 40 ans</div></h1>
         
         <Grid container spacing={2}>
@@ -117,7 +120,7 @@ function MultipleItems({ toggleElement, updateShopInfo, shops }) {
   };
 
   return (
-    <Container>
+    <Container style={{marginTop: '1em'}}>
       <div className="slider-container">
         <Grid>
           <Grid item xs={9} sm={5} xl={1}>
@@ -139,9 +142,9 @@ console.log(item)
                     <img src={item.Title + '.png'} style={{ width: '50%', maxWidth: '300px', display: 'inline-block'}} />
                     </div>
                     
-                    <h2 style={{ color: '#003A96' }}>{item.SubTitle}</h2>
+                    <h2 id="SousTitre" style={{ color: '#003A96' }}>{item.SubTitle}</h2>
                     <div className="bar2"></div>
-                    <p className='desc2' style={{color: 'black'}}dangerouslySetInnerHTML={{ __html: item.Description2.replace(/<ul>/g, '<ul>').replace(/<\/ul>/g, '</ul>').replace(/<li>/g, '<li>').replace(/<\/li>/g, '</li>') }}></p>
+                    <p className='desc2' style={{color: 'black'}} dangerouslySetInnerHTML={{ __html: item.Description2.replace(/<ul>/g, '<ul>').replace(/<\/ul>/g, '</ul>').replace(/<li>/g, '<li>').replace(/<\/li>/g, '</li>') }}></p>
                     {/* <p className='desc2'>{desc1}</p> */}
 
 

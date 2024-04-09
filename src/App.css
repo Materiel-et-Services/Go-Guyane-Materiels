@@ -55,9 +55,6 @@ h2{
   font-size: larger;
 } */
 
-.desc2{
-  color:#003A96;
-}
 
 .bar{
   height: 15px;
@@ -135,7 +132,14 @@ justify-content: center;
       text-align: left;
       
     }
-  } 
+
+    .desc2{
+     font-size:1.7em
+    }
+
+    #SousTitre{
+      font-size:xx-large
+  } }
   
   /* @media (min-width: 601px) and (max-width: 960px) {
     .textphoto {
@@ -173,14 +177,14 @@ justify-content: center;
         font-size: 2em;
       }
       .textbutton{
-        font-size: xx-large;
+        font-size: 2em;
       }
       
   } 
 
-  .textbutton{
+  /* .textbutton{
     font-size: medium;
-  }
+  } */
 
   #contentDesk a {
     text-decoration: none;

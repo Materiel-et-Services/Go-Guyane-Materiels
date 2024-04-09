@@ -51,7 +51,7 @@ function ShowCard({shop, showElement, shops}){
           </div>
           </a>
 
-          <a href="mailto:commercial@matservgf.com">
+          <a href={"mailto:" + shop.Mail}>
           <div className='butcolor Surbutcolor'>
             <h3 class='textbutton'><EmailIcon /> Contactez-nous par mail</h3>
           </div>
@@ -60,7 +60,7 @@ function ShowCard({shop, showElement, shops}){
         </div>
 
        
-        <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
+        <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', marginRight:"-4%"}}>
           <h1 style={{fontSize: '2em', margin: "0", fontWeight: 'bold'}}>On vous <div style={{color: 'white', backgroundColor: '#003A96'}}>attend</div>!</h1>
           
           <div>

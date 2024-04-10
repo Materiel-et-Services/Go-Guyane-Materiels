@@ -128,17 +128,17 @@ justify-content: center;
       font-size: 2em;
     }
     .textcard{
-      font-size: 2em;
+      font-size: 2.5em;
       text-align: left;
       
     }
 
     .desc2{
-     font-size:1.7em
+     font-size:2.3em
     }
 
     #SousTitre{
-      font-size:xx-large
+      font-size:3em;
   } }
   
   /* @media (min-width: 601px) and (max-width: 960px) {
@@ -174,7 +174,7 @@ justify-content: center;
       }
       #resumeCard{
         text-wrap: balance;
-        font-size: 2em;
+        font-size: 2.5em;
       }
       .textbutton{
         font-size: 2em;
@@ -186,6 +186,11 @@ justify-content: center;
     font-size: medium;
   } */
 
+  .slick-dots li.slick-active button:before{
+    opacity: 1;
+    color:rgba(255,176,0,1)
+  }
+
   #contentDesk a {
     text-decoration: none;
     color: inherit;
@@ -196,6 +201,7 @@ justify-content: center;
     background: linear-gradient(90deg, #003A96 0%, rgb(109, 171, 233) 100%);
     color: white;
   }
+
 
 
   .slick-prev:before, .slick-next:before{

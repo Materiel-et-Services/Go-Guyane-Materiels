@@ -61,7 +61,7 @@ function ShowCard({shop, showElement, shops}){
 
        
         <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', marginRight:"-4%"}}>
-          <h1 style={{fontSize: '2em', margin: "0", fontWeight: 'bold'}}>On vous <div style={{color: 'white', backgroundColor: '#003A96'}}>attend</div>!</h1>
+          <h1 id="waiting" style={{ margin: "0", fontWeight: 'bold'}}>On vous <div style={{color: 'white', backgroundColor: '#003A96'}}>attend</div>!</h1>
           
           <div>
           <Map shop={shop} shopsList={shops}/>

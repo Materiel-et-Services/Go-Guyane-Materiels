@@ -65,12 +65,10 @@ const toggleElement = () => {
   <MultipleItems toggleElement={toggleElement} updateShopInfo={updateActiveShopInfo} shops={shops}></MultipleItems>
   {/* <MyCarousel toggleElement={toggleElement} updateShopInfo={updateActiveShopInfo} shops={shops}></MyCarousel> */}
 
-
-
-<Reseaux></Reseaux>
-<div style={{ marginRight: '30px' }} ref={shopTabsRef}>
+<div ref={shopTabsRef}>
 <ShowCard shop={shop} showElement={showElement} shops={shops}></ShowCard>
 </div>
+<Reseaux></Reseaux>
  </div>
 
 }

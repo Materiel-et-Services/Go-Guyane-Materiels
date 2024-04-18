@@ -27,7 +27,7 @@ function ShowCard({shop, showElement, shops}){
         <Card style={{borderRadius: '20px'}} >
 
           <CardContent id='contentDesk'>
-            <div>
+            <div id='containCard1'>
           <img src={shop.Title + '.png'} style={{ width: '100%', maxWidth: '360px', display: 'block', margin: '2em auto' }} />
           <div className='bar' style={{margin: '2em auto'}}></div>
           
@@ -42,7 +42,7 @@ function ShowCard({shop, showElement, shops}){
           
          
           <div className='butcolor'>
-            <h3 class='textbutton'><PlaceIcon />{shop.Street}</h3>
+            <h3 class='textbutton'>{shop.Street}</h3>
           </div>
           
            <a href={"tel:".concat(String(shop.T_x00e9_l_x00e9_phone))}>
@@ -66,6 +66,9 @@ function ShowCard({shop, showElement, shops}){
           <div>
           <Map shop={shop} shopsList={shops}/>
        </div> 
+   
+
+       
        </div>
 </CardContent>
        

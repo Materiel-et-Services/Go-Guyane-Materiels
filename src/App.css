@@ -112,15 +112,27 @@ display: flex;
 justify-content: center; 
  margin: 20px}
 
+/* 
+.sliderStyle:hover{
+  background-color: rgb(219, 238, 255);
+} */
+
 .carou:hover{
  cursor: pointer;
- /* background-color: rgb(240, 248, 255); */
-
+ 
   }
+
+  /* .carou::after{
+    background-color: rgb(199, 14, 14);
+  } */
 
   .carou{
     border-radius: 30px;
-    /* border: 10px solid #003A96; */
+
+    
+    
+    
+    
   }
 
   @media (max-width: 600px) {
@@ -161,6 +173,7 @@ justify-content: center;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding:10px
 }
 
  @media (max-width: 900px) {
@@ -181,6 +194,14 @@ justify-content: center;
       }
       
   } 
+
+
+  /* @media (max-width: 1200px) {
+    #containCard1{
+      width: 644px;
+     
+    }
+  } */
 
   /* .textbutton{
     font-size: medium;
@@ -214,4 +235,22 @@ justify-content: center;
 
   #resumeCard{
     font-weight: 600;
+  }
+
+  @keyframes shake {
+    0%, 100% { transform: rotateX(0deg) rotateY(0deg); }
+    25% { transform: rotateX(15deg) rotateY(-15deg); }
+    50% { transform: rotateX(0deg) rotateY(0deg); }
+    75% { transform: rotateX(-15deg) rotateY(15deg); }
+  }
+  
+  
+  
+  .shake {
+    animation: shake 1s infinite;
+    
+  }
+
+  .css-46bh2p-MuiCardContent-root{
+    padding:10px;
   }

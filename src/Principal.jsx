@@ -1,7 +1,7 @@
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Slider from "react-slick";
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { blue, red } from '@mui/material/colors';
@@ -17,9 +17,7 @@ import { Block } from '@mui/icons-material';
 import { Grid, useMediaQuery } from '@mui/material';
 import { useTheme } from '@emotion/react';
 import Container from '@mui/material/Container';
-// import Carousel from 'react-material-ui-carousel';
-// import { Paper, IconButton } from '@mui/material';
-// import { ArrowBackIos, ArrowForwardIos } from '@mui/icons-material';
+
 
 
 function Pic() {
@@ -111,6 +109,8 @@ function Carte() {
 
 
 function MultipleItems({ toggleElement, updateShopInfo, shops }) {
+
+  
   const settings = {
     dots: true,
     infinite: true,
@@ -120,7 +120,7 @@ function MultipleItems({ toggleElement, updateShopInfo, shops }) {
   };
 
   return (
-    <Container style={{marginTop: '1em'}}>
+    <Container style={{marginTop: '1em'}} className='ContainerSty'>
       <div className="slider-container">
         <Grid>
           <Grid item xs={9} sm={5} xl={1}>
@@ -139,7 +139,7 @@ console.log(item)
                   }}>
 
                     <div style={{height: '180px', display: 'flex', alignItems:'center', justifyContent:'center'}}>
-                    <img src={item.Title + '.png'} style={{ width: '50%', maxWidth: '300px', display: 'inline-block'}} />
+                    <img className='shake' src={item.Title + '.png'} style={{ width: '50%', maxWidth: '300px', display: 'inline-block'}} />
                     </div>
                     
                     <h2 id="SousTitre" style={{ color: '#003A96' }}>{item.SubTitle}</h2>
@@ -250,5 +250,10 @@ console.log(item)
 //     </Card>
 //   );
 // };
+
+
+
+
+
 export default Carte;
 export {MultipleItems, Pic};

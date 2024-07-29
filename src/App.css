@@ -259,20 +259,25 @@ justify-content: center;
   /* Styling the header message */
 
   .text-header-dynamic {
-    max-width: 100%;                      /* largeur de la fenêtre */
+    max-width: 100%;                      
     margin: 1em auto 2em;
+    
     /* border: 2px solid #F0F0FF; */
-    overflow: hidden;                     /* masque tout ce qui dépasse */
+    overflow: hidden;                   
     box-shadow: 0 .25em 3em rgba(204,204,204,0.1),inset 0 0 1em .25em rgba(204,204,204,0.1);
   }
 
-  .text-header-dynamic > :first-child {
-    display: inline-block;                /* modèle de boîte en ligne */
-    padding-right: 2em;                   /* un peu d'espace pour la transition */
-    padding-left: 100%;                   /* placement à droite du conteneur */
-    white-space: nowrap;                  /* pas de passage à la ligne */
-    animation: defilement-rtl 30s infinite linear;
+  .text-header-dynamic a {
+    color: aliceblue;
   }
+
+  /* .text-header-dynamic > :first-child {
+    display: inline-block;                
+    padding-right: 2em;                   
+    padding-left: 100%;                   
+    white-space: nowrap;                  
+    animation: defilement-rtl 30s infinite linear;
+  } */
 
   @keyframes defilement-rtl {
     0% {

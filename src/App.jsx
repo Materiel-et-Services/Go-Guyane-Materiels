@@ -2,9 +2,11 @@ import Carte from './Principal';
 import { MultipleItems, Pic } from './Principal';
 import Reseaux from './Reseaux';
 import ShowCard from './CarteMagasin';
+import Publication from "./PublicationLegale";
 import './App.css';
 import React,{useState,useEffect,useRef,useLayoutEffect} from 'react';
 import { Grid } from '@mui/material';
+const envBanner = JSON.parse(import.meta.env.VITE_SHOW_BANNER);
 
 
 
@@ -19,6 +21,7 @@ function App() {
   const [shops,fetchShops] = useState(null)
 // const inputRef = useRef(null)
 const [shop,setShop] = useState(null)
+const [showBanner, setShowBanner] = useState(envBanner);
 
 useEffect(() => {
   
@@ -60,7 +63,7 @@ const toggleElement = () => {
   <div>
 
 
-    <Pic></Pic>
+    <Pic showBanner={showBanner}></Pic>
     <Carte></Carte>
   <MultipleItems toggleElement={toggleElement} updateShopInfo={updateActiveShopInfo} shops={shops}></MultipleItems>
   {/* <MyCarousel toggleElement={toggleElement} updateShopInfo={updateActiveShopInfo} shops={shops}></MyCarousel> */}
@@ -69,6 +72,7 @@ const toggleElement = () => {
 <ShowCard shop={shop} showElement={showElement} shops={shops}></ShowCard>
 </div>
 <Reseaux></Reseaux>
+<Publication showBanner={showBanner}></Publication>
  </div>
 
 

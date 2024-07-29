@@ -17,13 +17,12 @@ import { Block } from '@mui/icons-material';
 import { Grid, useMediaQuery } from '@mui/material';
 import { useTheme } from '@emotion/react';
 import Container from '@mui/material/Container';
-const envBanner = JSON.parse(import.meta.env.VITE_SHOW_BANNER);
-// a comment
 
 
-function Pic() {
+
+function Pic({showBanner}) {
   
-  const [showBanner, setShowBanner] = useState(envBanner);
+  
   // const theme = useTheme();
   // const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
   return (
@@ -32,7 +31,7 @@ function Pic() {
       
       <Container>
       {showBanner === true ? <Grid className='text-header-dynamic' xs={12} sm={8} md={6} fullWidth>
-        <h3>Nous avons le plaisir de vous annoncer la fusion des sociétés Matériels et Services et Bolt And Ladder à compter du 01/09/2024</h3>
+        <a href='#PublicationLegale'><Typography variant="h6">Nous avons le plaisir de vous annoncer la fusion des sociétés Matériels et Services et Bolt And Ladder, consulter l'avis de publication en pied de page de ce site. </Typography></a>
       </Grid> : ""}
       <Grid xs={12} sm={8} md={6} fullWidth>
 
